@@ -10,9 +10,10 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Build with Buildozer
+    - name: Fix ownership and Build APK
       run: |
-        buildozer -v android debug
+        git config --global --add safe.directory /__w/my-first-game/my-first-game
+        buildozer -v --allow-root android debug
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
