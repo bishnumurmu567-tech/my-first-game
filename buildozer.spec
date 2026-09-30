@@ -6,10 +6,9 @@ source.dir = .
 source.include_exts = py,png,jpg,kv,atlas
 version = 0.1
 requirements = python3,kivy==2.3.0android.minapi = 21
-android.ndk_api = 21requirements = python3,kivy==2.3.0
 orientation = portrait
 fullscreen = 0
-android.ndk = 25bandroid.api = 33
+android.api = 33
 android.minapi = 21
-android.ndk_api = 21p4a.branch = master
-
+android.ndk_api = 21
+android.ndk = 25b
